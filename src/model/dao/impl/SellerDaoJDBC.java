@@ -71,7 +71,8 @@ public class SellerDaoJDBC implements SellerDao {
 					+ "BirthDate = ?, "
 					+ "BaseSalary = ?, " 
 					+ "DepartmentId = ? " 
-					+ "WHERE Id = ?", Statement.RETURN_GENERATED_KEYS);
+					+ "WHERE Id = ?", 
+					Statement.RETURN_GENERATED_KEYS);
 
 			st.setString(1, obj.getName());
 			st.setString(2, obj.getEmail());
